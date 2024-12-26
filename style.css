@@ -1,0 +1,259 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  width: 100vw;
+  height: 100vh;
+  /*background: url("./img/mohammad-rahmani-8qEB0fTe9Vw-unsplash.jpg");*/
+  /*background: url("https://picsum.photos/1600/900/?landscape");*/
+  background-size: cover;
+  background-position: center;
+}
+.wallpaper {
+  width: 100vw;
+  height: 100vh;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  z-index: -10;
+  position: fixed;
+}
+header {
+  width: 100vw;
+  height: 15vh;
+  backdrop-filter: blur(3vw);
+  border: 2px #000000 solid;
+  display: flex;
+  align-content: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-around;
+  color: #ffffff;
+  z-index: 3;
+}
+a {
+  color: #7e00eb;
+  font-family: "Sora", serif;
+  font-weight: 900 bold;
+  text-decoration: 0 none;
+  font-size: 2vw;
+  transition: 0.3s ease-in-out;
+}
+a:hover {
+  opacity: 0.7;
+  color: #f9f9f0;
+}
+.tittle {
+  font-size: 3vw;
+  font-family: "Faculty Glyphic", serif;
+  color: #6500ca;
+  border: #000000;
+  text-decoration: underline overline;
+}
+.search-div {
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  backdrop-filter: blur(2vw);
+  margin-bottom: 40px;
+  padding: 9px;
+  border-top: #ffffff solid 1px;
+
+  z-index: 2;
+}
+.search {
+  width: 300px;
+  height: 30px;
+  border-radius: 10px;
+  background: 0;
+  color: #ffffff;
+  border: 1px #3a008b solid;
+  margin-right: 5px;
+  margin-left: 5px;
+  padding-left: 10px;
+}
+.search-buttom,
+#showall {
+  width: 60px;
+  height: 30px;
+  border-radius: 20px;
+  font-size: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 0;
+  font-family: "Sora", serif;
+  background: #300072;
+  cursor: pointer;
+}
+#showall {
+  font-size: 17px;
+  width: auto;
+  padding: 5px;
+  color: #ffffff;
+  display: none;
+}
+ul {
+  width: 100vw;
+  height: 100vh;
+  flex-direction: row;
+  display: flex;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  align-content: flex-start;
+  justify-content: space-around flex-start;
+}
+li {
+  border: #ffffff 1px solid;
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  min-width: 390px;
+  height: min-content;
+  padding: 8px;
+  backdrop-filter: blur(25px);
+  margin-left: 35px;
+  margin-bottom: 35px;
+}
+.foto {
+  width: 80px;
+  border-radius: 50%;
+}
+.infos {
+  display: flex;
+  flex-direction: column;
+  margin-left: 10px;
+}
+.name {
+  font-family: "Oswald", serif;
+  color: #f9f9f0;
+}
+.birthday,
+.tel,
+.college {
+  font-family: "Roboto", serif;
+  font-weight: 400 bold;
+  color: #f9f5f0;
+}
+.college {
+  font-size: 15px;
+}
+.more {
+  width: 50px;
+  right: 0;
+  bottom: 0;
+  display: flex;
+  justify-content: center;
+  position: absolute;
+  margin: 15px;
+  background: #3a008b;
+  color: #f9f9f0;
+  font-family: "Oswald", serif;
+  font-size: 16px;
+  border: 1px #ffffff solid;
+  border-radius: 15px;
+  cursor: pointer;
+}
+.more:hover,
+.search-buttom:hover {
+  opacity: 0.8;
+}
+.more:active,
+.search-buttom:active {
+  opacity: 0.5;
+}
+form {
+  display: flex;
+  flex-direction: column;
+  width: 390px;
+  height: auto;
+  color: #ffffff;
+  align-items: center;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  position: absolute;
+  top: 30%;
+  left: -380px;
+  border-radius: 40px;
+  position: fixed;
+  z-index: 5;
+  backdrop-filter: blur(4vw);
+  border: #ffffff 1px solid;
+}
+#close {
+  display: flex;
+  right: 10px;
+  top: 10px;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background: #300072;
+  color: #ffffff;
+  justify-content: center;
+  align-items: center;
+}
+.person {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+#form-image {
+  width: 100px;
+  border-radius: 50%;
+  margin-bottom: 20px;
+}
+#form-name {
+  font-size: 26px;
+}
+.date {
+  margin-top: 10px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+#form-age {
+  display: flex;
+  font-size: 16px;
+  margin-left: 20px;
+  border: #000000 solid 1px;
+  border-radius: 50%;
+  width: 32px;
+  height: 32px;
+  justify-content: center;
+  align-items: center;
+}
+#locality {
+  margin-top: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+#form-school {
+  font-size: 22px;
+  margin-bottom: 5px;
+}
+#form-room {
+  font-size: 19px;
+  margin-bottom: 5px;
+}
+#form-adress {
+  font-size: 20px;
+  margin-bottom: 20px;
+}
+.contact {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+#form-email {
+  font-size: 20px;
+  margin-bottom: 30px;
+}
+#form-notes {
+  color: #f9f9f0;
+  cursor: pointer;
+}
