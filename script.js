@@ -131,7 +131,8 @@ const pessoas = [
   const tel = document.querySelector(".tel")
   const college = document.querySelector(".college")
   const list = document.querySelector(".list")
-  const searchName = document.querySelector(".search").value.trim()
+  const moreAbout = document.querySelector("form")
+  
   const buttonShowAll = document.querySelector("#showall")
   let myli = ``
   pessoas.forEach(Element =>{
@@ -143,7 +144,7 @@ const pessoas = [
                     <p type="birthday" class="birthday">${Element.dataNascimento} idade = ${Element.idade}</p>
                     <p type="tel" class="tel">${Element.telefone}</p>
                     <p class="college">${Element.colegio}</p>
-                    <button class="more">...</button>
+                    <button onclick="showMore()" class="more">...</button>
                 </div>
             </li>
     `
@@ -154,12 +155,20 @@ const pessoas = [
   if(searchName != "") {
     buttonShowAll.style.display("block")
   }
+  function showMore() {
+    moreAbout.style.left = "30px"
+  }
+  function closeForm() {
+    moreAbout.style.left = "-380px"
+    closeForm().preventDefault()
+  }
+
 
 
   function searchPerson() {
-   
+   const searchName = document.querySelector(".search").value.trim()
     pessoas.forEach(pessoa =>{
-        if (name === pessoa.nomeCompleto) {
+        if (searchName === pessoa.nomeCompleto) {
             list.innerHTML = myli = `
     <li class="element-list">
                 <img src="./img/defaultImage.webp" class="foto">
@@ -168,12 +177,25 @@ const pessoas = [
                     <p type="birthday" class="birthday">${pessoa.dataNascimento} idade = ${pessoa.idade}</p>
                     <p type="tel" class="tel">${pessoa.telefone}</p>
                     <p class="college">${pessoa.colegio}</p>
-                    <button class="more">...</button>
+                    <button onclick="showMore()" class="more">...</button>
                 </div>
             </li>
     `;
         } else {
-            
+          pessoas.forEach(Element =>{
+            myli = myli + `
+            <li class="element-list">
+                        <img src="./img/defaultImage.webp" class="foto">
+                        <div class="infos">
+                            <h3 class="name">${Element.nomeCompleto}</h3>
+                            <p type="birthday" class="birthday">${Element.dataNascimento} idade = ${Element.idade}</p>
+                            <p type="tel" class="tel">${Element.telefone}</p>
+                            <p class="college">${Element.colegio}</p>
+                            <button onclick="showMore()" class="more">...</button>
+                        </div>
+                    </li>
+            `
+          });
         }
     })
   }

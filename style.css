@@ -182,18 +182,22 @@ form {
   z-index: 5;
   backdrop-filter: blur(4vw);
   border: #ffffff 1px solid;
+  transition: 1.2s ease-in-out;
 }
 #close {
   display: flex;
-  right: 10px;
-  top: 10px;
+  right: 20px;
+  top: 20px;
   width: 30px;
   height: 30px;
+  border: #000000 1px solid;
   border-radius: 50%;
   background: #300072;
   color: #ffffff;
   justify-content: center;
   align-items: center;
+  position: absolute;
+  cursor: pointer;
 }
 .person {
   display: flex;
