@@ -126,10 +126,6 @@ const pessoas = [
       src:""
     }
   ];
-  const name = document.querySelector(".name")
-  const birthday = document.querySelector(".birthday")
-  const tel = document.querySelector(".tel")
-  const college = document.querySelector(".college")
   const list = document.querySelector(".list")
   const moreAbout = document.querySelector("form")
   
@@ -150,17 +146,12 @@ const pessoas = [
     `
     list.innerHTML = myli
   });
-  console.log(searchName.value)
   
-  if(searchName != "") {
-    buttonShowAll.style.display("block")
-  }
   function showMore() {
     moreAbout.style.left = "30px"
   }
   function closeForm() {
     moreAbout.style.left = "-380px"
-    closeForm().preventDefault()
   }
 
 
@@ -168,34 +159,14 @@ const pessoas = [
   function searchPerson() {
    const searchName = document.querySelector(".search").value.trim()
     pessoas.forEach(pessoa =>{
-        if (searchName === pessoa.nomeCompleto) {
-            list.innerHTML = myli = `
-    <li class="element-list">
-                <img src="./img/defaultImage.webp" class="foto">
-                <div class="infos">
-                    <h3 class="name">${pessoa.nomeCompleto}</h3>
-                    <p type="birthday" class="birthday">${pessoa.dataNascimento} idade = ${pessoa.idade}</p>
-                    <p type="tel" class="tel">${pessoa.telefone}</p>
-                    <p class="college">${pessoa.colegio}</p>
-                    <button onclick="showMore()" class="more">...</button>
-                </div>
-            </li>
-    `;
-        } else {
-          pessoas.forEach(Element =>{
-            myli = myli + `
-            <li class="element-list">
-                        <img src="./img/defaultImage.webp" class="foto">
-                        <div class="infos">
-                            <h3 class="name">${Element.nomeCompleto}</h3>
-                            <p type="birthday" class="birthday">${Element.dataNascimento} idade = ${Element.idade}</p>
-                            <p type="tel" class="tel">${Element.telefone}</p>
-                            <p class="college">${Element.colegio}</p>
-                            <button onclick="showMore()" class="more">...</button>
-                        </div>
-                    </li>
-            `
-          });
+
+      const partes = pessoa.nomeCompleto.split(" ")
+      
+
+        if (searchName ===  partes[0] ) {
+            console.log('iau') 
         }
+        
     })
   }
+  
