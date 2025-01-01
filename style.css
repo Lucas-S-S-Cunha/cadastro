@@ -165,21 +165,36 @@ li {
 .search-buttom:active {
   opacity: 0.5;
 }
+.mask {
+  display: flex;
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  z-index: 5;
+  background: rgb(0, 0, 0);
+  background: radial-gradient(
+    circle,
+    rgba(0, 0, 0, 0.4942909048384979) 0%,
+    rgba(0, 0, 0, 0.9396690560990021) 100%
+  );
+  top: 0;
+  display: none;
+}
 form {
   display: flex;
   flex-direction: column;
-  width: 390px;
-  height: auto;
+  width: 490px;
+  height: 530px;
   color: #ffffff;
   align-items: center;
   padding-top: 30px;
   padding-bottom: 30px;
   position: absolute;
-  top: 30%;
-  left: -380px;
+  top: 15%;
+  left: -480px;
   border-radius: 40px;
   position: fixed;
-  z-index: 5;
+  z-index: 6;
   backdrop-filter: blur(4vw);
   border: #ffffff 1px solid;
   transition: 1.2s ease-in-out;
@@ -212,6 +227,12 @@ form {
 #form-name {
   font-size: 26px;
 }
+.id {
+  border: #ffffff 1px solid;
+  border-radius: 10px;
+  padding: 5px;
+  width: auto;
+}
 .date {
   margin-top: 10px;
   display: flex;
@@ -222,7 +243,7 @@ form {
   display: flex;
   font-size: 16px;
   margin-left: 20px;
-  border: #000000 solid 1px;
+  border: #ffffff solid 1px;
   border-radius: 50%;
   width: 32px;
   height: 32px;
