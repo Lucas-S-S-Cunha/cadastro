@@ -6,7 +6,7 @@ const pessoas = [
     telefone: "(11) 98765-4321",
     colegio: "Colégio Estadual de São Paulo",
     sala: "7A",
-    src: "img/defaultImage.webp",
+    src: "ProfileImages/defaultImage.webp",
     id: 1,
     email: "ana.oliveira@email.com",
     endereco: "Rua das Acácias, 123, São Paulo, SP, 01000-000"
@@ -18,7 +18,7 @@ const pessoas = [
     telefone: "(21) 97654-3210",
     colegio: "Escola Municipal do Rio",
     sala: "8B",
-    src: "img/defaultImage.webp",
+    src: "ProfileImages/defaultImage.webp",
     id: 2,
     email: "lucas.silva@email.com",
     endereco: "Rua Rio Branco, 456, Rio de Janeiro, RJ, 20010-000"
@@ -30,7 +30,7 @@ const pessoas = [
     telefone: "(31) 99876-5432",
     colegio: "Colégio Monte Alto",
     sala: "6C",
-    src: "img/defaultImage.webp",
+    src: "ProfileImages/defaultImage.webp",
     id: 3,
     email: "mariana.santos@email.com",
     endereco: "Rua das Flores, 789, Belo Horizonte, MG, 30150-100"
@@ -42,7 +42,7 @@ const pessoas = [
     telefone: "(41) 91234-5678",
     colegio: "Escola Estadual Curitiba",
     sala: "9A",
-    src: "img/defaultImage.webp",
+    src: "ProfileImages/defaultImage.webp",
     id: 4,
     email: "joao.costa@email.com",
     endereco: "Avenida Paraná, 1010, Curitiba, PR, 80020-200"
@@ -54,7 +54,7 @@ const pessoas = [
     telefone: "(51) 98765-1234",
     colegio: "Escola Municipal Porto Alegre",
     sala: "5B",
-    src: "img/defaultImage.webp",
+    src: "ProfileImages/defaultImage.webp",
     id: 5,
     email: "sofia.lima@email.com",
     endereco: "Rua das Palmeiras, 2020, Porto Alegre, RS, 90030-100"
@@ -66,7 +66,7 @@ const pessoas = [
     telefone: "(61) 97654-9876",
     colegio: "Colégio Brasília Centro",
     sala: "8C",
-    src: "img/defaultImage.webp",
+    src: "ProfileImages/defaultImage.webp",
     id: 6,
     email: "felipe.rocha@email.com",
     endereco: "Rua do Sol, 3030, Brasília, DF, 70030-200"
@@ -78,7 +78,7 @@ const pessoas = [
     telefone: "(71) 99876-1234",
     colegio: "Escola Estadual Salvador",
     sala: "7B",
-    src: "img/defaultImage.webp",
+    src: "ProfileImages/defaultImage.webp",
     id: 7,
     email: "isabela.souza@email.com",
     endereco: "Rua das Acácias, 4040, Salvador, BA, 40040-300"
@@ -90,7 +90,7 @@ const pessoas = [
     telefone: "(11) 98765-4321",
     colegio: "Colégio Estadual de São Paulo",
     sala: "7A",
-    src: "img/defaultImage.webp",
+    src: "ProfileImages/defaultImage.webp",
     id: 8,
     email: "ana.oliveira@email.com",
     endereco: "Rua das Acácias, 123, São Paulo, SP, 01000-000"
@@ -102,7 +102,7 @@ const pessoas = [
     telefone: "(21) 97654-3210",
     colegio: "Escola Municipal do Rio",
     sala: "8B",
-    src: "img/defaultImage.webp",
+    src: "ProfileImages/defaultImage.webp",
     id: 9,
     email: "lucas.silva@email.com",
     endereco: "Rua Rio Branco, 456, Rio de Janeiro, RJ, 20010-000"
@@ -114,7 +114,7 @@ const pessoas = [
     telefone: "(31) 99876-5432",
     colegio: "Colégio Monte Alto",
     sala: "6C",
-    src: "img/defaultImage.webp",
+    src: "ProfileImages/defaultImage.webp",
     id: 10,
     email: "mariana.santos@email.com",
     endereco: "Rua das Flores, 789, Belo Horizonte, MG, 30150-100"
@@ -126,7 +126,7 @@ const pessoas = [
     telefone: "(41) 91234-5678",
     colegio: "Escola Estadual Curitiba",
     sala: "9A",
-    src: "img/defaultImage.webp",
+    src: "ProfileImages/defaultImage.webp",
     id: 11,
     email: "joao.costa@email.com",
     endereco: "Avenida Paraná, 1010, Curitiba, PR, 80020-200"
@@ -138,7 +138,7 @@ const pessoas = [
     telefone: "(51) 98765-1234",
     colegio: "Escola Municipal Porto Alegre",
     sala: "5B",
-    src: "img/defaultImage.webp",
+    src: "ProfileImages/defaultImage.webp",
     id: 12,
     email: "sofia.lima@email.com",
     endereco: "Rua das Palmeiras, 2020, Porto Alegre, RS, 90030-100"
@@ -150,7 +150,7 @@ const pessoas = [
     telefone: "(61) 97654-9876",
     colegio: "Colégio Brasília Centro",
     sala: "8C",
-    src: "img/defaultImage.webp",
+    src: "ProfileImages/defaultImage.webp",
     id: 13,
     email: "felipe.rocha@email.com",
     endereco: "Rua do Sol, 3030, Brasília, DF, 70030-200"
@@ -162,7 +162,7 @@ const pessoas = [
     telefone: "(71) 99876-1234",
     colegio: "Escola Estadual Salvador",
     sala: "7B",
-    src: "img/defaultImage.webp",
+    src: "ProfileImages/defaultImage.webp",
     id: 14,
     email: "isabela.souza@email.com",
     endereco: "Rua das Acácias, 4040, Salvador, BA, 40040-300"
@@ -177,7 +177,7 @@ const pessoas = [
   pessoas.forEach(Element =>{
     myli = myli + `
     <li class="element-list">
-                <img src="./img/defaultImage.webp" class="foto">
+                <img src="./ProfileImages/defaultImage.webp" class="foto">
                 <div class="infos">
                     <h3 class="name">${Element.nomeCompleto}</h3>
                     <p type="birthday" class="birthday">${Element.dataNascimento} idade = ${Element.idade}</p>
