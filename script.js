@@ -1,3 +1,4 @@
+
 const pessoas = [
   {
     nomeCompleto: "Ana Beatriz Oliveira",
@@ -169,6 +170,8 @@ const pessoas = [
   }
 ];
 
+
+
   const list = document.querySelector(".list")
   const moreAbout = document.querySelector("form")
   const mask = document.querySelector(".mask")
@@ -229,7 +232,8 @@ const pessoas = [
     mask.style.display = "block"
   }
   function closeForm() {
-    moreAbout.style.left = "-480px;"
+
+    moreAbout.style.left = "-510px"
     mask.style.display = "none"
   }
 

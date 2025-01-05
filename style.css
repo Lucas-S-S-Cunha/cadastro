@@ -42,15 +42,29 @@ a {
   font-family: "Sora", serif;
   font-weight: 900 bold;
   text-decoration: 0 none;
-  font-size: 2vw;
+  font-size: 1.5vw;
   transition: 0.3s ease-in-out;
 }
+.yourFoto {
+  width: 50px;
+  border-radius: 50%;
+}
+.yourAccount {
+  display: flex;
+  flex-direction: column-reverse;
+  align-items: center;
+  justify-content: space-between;
+}
 a:hover {
-  opacity: 0.7;
-  color: #f9f9f0;
+  transition: 0.2s;
+  color: #f1f1f1;
+}
+a:active {
+  transition: 0.1s;
+  color: #b1b1b1;
 }
 .tittle {
-  font-size: 3vw;
+  width: 23vw;
   font-family: "Faculty Glyphic", serif;
   color: #eeeeee;
   text-decoration: underline overline;
@@ -193,20 +207,20 @@ li {
 form {
   display: flex;
   flex-direction: column;
-  min-width: 490px;
+  width: 520px;
   height: 530px;
   color: #ffffff;
   align-items: center;
   padding: 30px;
   position: absolute;
   top: 15%;
-  left: -480px;
+  left: -510px;
   border-radius: 40px;
   position: fixed;
   z-index: 6;
   backdrop-filter: blur(4vw);
   border: #ffffff 1px solid;
-  transition: 1.2s ease-in-out;
+  transition: 0.8s ease-in-out;
   box-shadow: 0 19px 16px #000000;
 }
 #close {

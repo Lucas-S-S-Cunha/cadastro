@@ -1,4 +1,4 @@
- export const pessoas = [
+  export const pessoas = [
     {
       nomeCompleto: "Ana Beatriz Oliveira",
       dataNascimento: "2008/05/12",
